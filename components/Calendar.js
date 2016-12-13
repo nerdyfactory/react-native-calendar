@@ -254,9 +254,9 @@ export default class Calendar extends Component {
             style={[styles.controlButton, this.props.customStyle.controlButton]}
             onPress={this.onPrev}
           >
-            <Text style={[styles.controlButtonText, this.props.customStyle.controlButtonText]}>
+            <View style={{alignItems: 'flex-end'}}>
               {this.props.prevButtonText}
-            </Text>
+            </View>
           </TouchableOpacity>
           <Text style={[styles.title, this.props.customStyle.title]}>
             {localizedMonth} {this.state.currentMonthMoment.year()}
@@ -265,9 +265,9 @@ export default class Calendar extends Component {
             style={[styles.controlButton, this.props.customStyle.controlButton]}
             onPress={this.onNext}
           >
-            <Text style={[styles.controlButtonText, this.props.customStyle.controlButtonText]}>
+            <View style={{alignItems: 'flex-start'}}>
               {this.props.nextButtonText}
-            </Text>
+            </View>
           </TouchableOpacity>
         </View>
       )

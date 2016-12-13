@@ -16,10 +16,10 @@ const DEVICE_WIDTH = Dimensions.get('window').width;
 const VIEW_INDEX = 2;
 
 export default class Calendar extends Component {
-
   state = {
     currentMonthMoment: moment(this.props.startDate),
-    selectedMoment: moment(this.props.selectedDate),
+    //selectedMoment: moment(this.props.selectedDate),
+    selectedMoment: null,
   };
 
   static propTypes = {

@@ -74,7 +74,9 @@ export default class Day extends Component {
     ? (
         <TouchableWithoutFeedback>
           <View style={[styles.dayButtonFiller, customStyle.dayButtonFiller]}>
-            <Text style={[styles.day, customStyle.day]} />
+            <View style={customStyle.dayButtonCircleFiller}>
+              <Text style={[styles.day, customStyle.day]} />
+            </View>
           </View>
         </TouchableWithoutFeedback>
       )
